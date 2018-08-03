@@ -29,6 +29,7 @@ class Sidebar extends Component {
         <ul className="Sidebar-place-list">
           {this.props.locations.map(place => (
             <li
+              tabIndex='0'
               className={this.placeClass(place)}
               key={place.name}
               onClick={this.onClick.bind(this)}
