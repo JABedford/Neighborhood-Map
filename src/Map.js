@@ -29,7 +29,7 @@ class Map extends Component {
   }
 
   onClick(event) {
-    const itemName = event.Fa.target.title;
+    const itemName = event.this.innerHTML;
     this.props.onselect(itemName);
   }
 
