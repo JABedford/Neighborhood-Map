@@ -115,7 +115,7 @@ class Map extends Component {
 
   render() {
     return (
-      <div id="map" className="Map" ref={element => (this.mapNode = element)}>
+      <div id="map" role="application" className="Map" ref={element => (this.mapNode = element)}>
         <p>Unable to load Google Maps.</p>
         <p>Please check your internet connection and try again.</p>
         <InfoWindow place={this.props.selection} />
